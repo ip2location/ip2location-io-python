@@ -147,101 +147,8 @@ Response Parameter
 |proxy.threat|string|Security threat reported.|
 |proxy.provider|string|Name of VPN provider if available.|
 
-```json
-{
-    "ip":"8.8.8.8",
-    "country_code":"US",
-    "country_name":"United States of America",
-    "region_name":"California",
-    "city_name":"Mountain View",
-    "latitude":37.405992,
-    "longitude":-122.078515,
-    "zip_code":"94043",
-    "time_zone":"-07:00",
-    "asn":"15169",
-    "as":"Google LLC",
-    "isp":"Google LLC",
-    "domain":"google.com",
-    "net_speed":"T1",
-    "idd_code":"1",
-    "area_code":"650",
-    "weather_station_code":"USCA0746",
-    "weather_station_name":"Mountain View",
-    "mcc":"-",
-    "mnc":"-",
-    "mobile_brand":"-",
-    "elevation":32,
-    "usage_type":"DCH",
-    "address_type":"Anycast",
-    "continent":{
-        "name":"North America",
-        "code":"NA",
-        "hemisphere":["north","west"],
-        "translation":{
-            "lang":"ko",
-            "value":"북아메리카"
-        }
-    },
-    "country":{
-        "name":"United States of America",
-        "alpha3_code":"USA",
-        "numeric_code":840,
-        "demonym":"Americans",
-        "flag":"https://cdn.ip2location.io/assets/img/flags/us.png",
-        "capital":"Washington, D.C.",
-        "total_area":9826675,
-        "population":331002651,
-        "currency":{
-            "code":"USD",
-            "name":"United States Dollar",
-            "symbol":"$"
-        },
-        "language":{
-            "code":"EN",
-            "name":"English"
-        },
-        "tld":"us",
-        "translation":{
-            "lang":"ko",
-            "value":"미국"
-        }
-    },
-    "region":{
-        "name":"California",
-        "code":"US-CA",
-        "translation":{
-            "lang":"ko",
-            "value":"캘리포니아주"
-        }
-    },
-    "city":{
-        "name":"Mountain View",
-        "translation":{
-            "lang":null,
-            "value":null
-        }
-    },
-    "time_zone_info":{
-        "olson":"America/Los_Angeles",
-        "current_time":"2022-04-18T23:41:57-07:00",
-        "gmt_offset":-25200,
-        "is_dst":true,
-        "sunrise":"06:27",
-        "sunset":"19:47"
-    },
-    "geotargeting":{
-        "metro":"807"
-    },
-    "ads_category":"IAB19",
-    "ads_category_name":"Technology & Computing",
-    "is_proxy":false,
-    "proxy":{
-        "last_seen":18,
-        "proxy_type":"DCH",
-        "threat":"-",
-        "provider":"-"
-    }
-}
+```python
+{'ip': '8.8.8.8', 'country_code': 'US', 'country_name': 'United States of America', 'region_name': 'California', 'city_name': 'Mountain View', 'latitude': 37.405992, 'longitude': -122.078515, 'zip_code': '94043', 'time_zone': '-07:00', 'asn': '15169', 'as': 'Google LLC', 'isp': 'Google LLC', 'domain': 'google.com', 'net_speed': 'T1', 'idd_code': '1', 'area_code': '650', 'weather_station_code': 'USCA0746', 'weather_station_name': 'Mountain View', 'mcc': '-', 'mnc': '-', 'mobile_brand': '-', 'elevation': 32, 'usage_type': 'DCH', 'address_type': 'Anycast', 'continent': {'name': 'North America', 'code': 'NA', 'hemisphere': ['north', 'west'], 'translation': {'lang': None, 'value': None}}, 'district': 'Santa Clara County', 'country': {'name': 'United States of America', 'alpha3_code': 'USA', 'numeric_code': 840, 'demonym': 'Americans', 'flag': 'https://cdn.ip2location.io/assets/img/flags/us.png', 'capital': 'Washington, D.C.', 'total_area': 9826675, 'population': 331002651, 'currency': {'code': 'USD', 'name': 'United States Dollar', 'symbol': '$'}, 'language': {'code': 'EN', 'name': 'English'}, 'tld': 'us', 'translation': {'lang': None, 'value': None}}, 'region': {'name': 'California', 'code': 'US-CA', 'translation': {'lang': '', 'value': ''}}, 'city': {'name': 'Mountain View', 'translation': {'lang': None, 'value': None}}, 'time_zone_info': {'olson': 'America/Los_Angeles', 'current_time': '2023-05-03T01:09:59-07:00', 'gmt_offset': -25200, 'is_dst': True, 'sunrise': '06:10', 'sunset': '19:59'}, 'geotargeting': {'metro': '807'}, 'ads_category': 'IAB19-11', 'ads_category_name': 'Data Centers', 'is_proxy': False, 'proxy': {'last_seen': 2, 'proxy_type': 'DCH', 'threat': '-', 'provider': '-'}}
 ```
 
 ### Domain WHOIS Lookup function
@@ -300,71 +207,8 @@ Response Parameter
 |billing.email|string|Billing email address.|
 |name_servers|array|Name servers|
 
-```json
-{
-    "domain": "locaproxy.com",
-    "domain_id": "1710914405_DOMAIN_COM-VRSN",
-    "status": "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
-    "create_date": "2012-04-03T02:34:32Z",
-    "update_date": "2021-12-03T02:54:57Z",
-    "expire_date": "2024-04-03T02:34:32Z",
-    "domain_age": 3863,
-    "whois_server": "whois.godaddy.com",
-    "registrar": {
-        "iana_id": "146",
-        "name": "GoDaddy.com, LLC",
-        "url": "https://www.godaddy.com"
-    },
-    "registrant": {
-        "name": "Registration Private",
-        "organization": "Domains By Proxy, LLC",
-        "street_address": "DomainsByProxy.com",
-        "city": "Tempe",
-        "region": "Arizona",
-        "zip_code": "85284",
-        "country": "US",
-        "phone": "+1.4806242599",
-        "fax": "+1.4806242598",
-        "email": "Select Contact Domain Holder link at https://www.godaddy.com/whois/results.aspx?domain=LOCAPROXY.COM"
-    },
-    "admin": {
-        "name": "Registration Private",
-        "organization": "Domains By Proxy, LLC",
-        "street_address": "DomainsByProxy.com",
-        "city": "Tempe",
-        "region": "Arizona",
-        "zip_code": "85284",
-        "country": "US",
-        "phone": "+1.4806242599",
-        "fax": "+1.4806242598",
-        "email": "Select Contact Domain Holder link at https://www.godaddy.com/whois/results.aspx?domain=LOCAPROXY.COM"
-    },
-    "tech": {
-        "name": "Registration Private",
-        "organization": "Domains By Proxy, LLC",
-        "street_address": "DomainsByProxy.com",
-        "city": "Tempe",
-        "region": "Arizona",
-        "zip_code": "85284",
-        "country": "US",
-        "phone": "+1.4806242599",
-        "fax": "+1.4806242598",
-        "email": "Select Contact Domain Holder link at https://www.godaddy.com/whois/results.aspx?domain=LOCAPROXY.COM"
-    },
-    "billing": {
-        "name": "",
-        "organization": "",
-        "street_address": "",
-        "city": "",
-        "region": "",
-        "zip_code": "",
-        "country": "",
-        "phone": "",
-        "fax": "",
-        "email": ""
-    },
-    "nameservers": "vera.ns.cloudflare.com, walt.ns.cloudflare.com"
-}
+```python
+{'domain': 'example.com', 'domain_id': '2336799_DOMAIN_COM-VRSN', 'status': 'clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited', 'create_date': '1995-08-14T04:00:00Z', 'update_date': '2022-08-14T07:01:31Z', 'expire_date': '2023-08-13T04:00:00Z', 'domain_age': 10124, 'whois_server': 'whois.iana.org', 'registrar': {'iana_id': '376', 'name': 'RESERVED-Internet Assigned Numbers Authority', 'url': 'http://res-dom.iana.org'}, 'registrant': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'admin': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'tech': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'billing': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'nameservers': ['a.iana-servers.net', 'b.iana-servers.net']}
 ```
 
 
