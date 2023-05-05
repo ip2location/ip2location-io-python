@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 	long_description = fh.read()
 
 setuptools.setup(
-	name="ip2locationio",
+	name="ip2location-io",
 	version="1.0.0", 
 	author="IP2Location",
 	author_email="support@ip2location.com",
