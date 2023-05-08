@@ -2,52 +2,27 @@ import sys
 import socket
 import json
 import os
+import urllib.parse, http.client
 
-if sys.version < '3':
-    import urllib, httplib
-    def urlencode(x):
-        return urllib.urlencode(x)
-    def httprequest(x, usessl):
-        try:
-            # conn = httplib.HTTPConnection("api.ip2location.com")
-            if (usessl is True):
-                conn = httplib.HTTPSConnection("api.ip2location.com")
-            else:
-                conn = httplib.HTTPConnection("api.ip2location.com")
-            conn.request("GET", "/v2/?" + x)
-            res = conn.getresponse()
-            return json.loads(res.read())
-        except:
-            return None
-    def u(x):
-        return x.decode('utf-8')
-    def b(x):
-        return str(x)
-else:
-    import urllib.parse, http.client
-    def urlencode(x):
-        return urllib.parse.urlencode(x)
-    # def httprequest(x, usessl):
-    def httprequest(hostname, path, parameters):
-        try:
-            conn = http.client.HTTPSConnection(hostname)
-            # if (usessl is True):
-                # conn = http.client.HTTPSConnection("api.ip2location.io")
-            # else:
-                # conn = http.client.HTTPConnection("api.ip2location.io")
-            conn.request("GET", path + parameters)
-            res = conn.getresponse()
-            return json.loads(res.read())
-        except:
-            return None
-    def u(x):
-        if isinstance(x, bytes):
-            return x.decode()
+
+def urlencode(x):
+    return urllib.parse.urlencode(x)
+def httprequest(hostname, path, parameters):
+    try:
+        conn = http.client.HTTPSConnection(hostname)
+        conn.request("GET", path + parameters)
+        res = conn.getresponse()
+        return json.loads(res.read())
+    except:
+        return None
+def u(x):
+    if isinstance(x, bytes):
+        return x.decode()
+    return x
+def b(x):
+    if isinstance(x, bytes):
         return x
-    def b(x):
-        if isinstance(x, bytes):
-            return x
-        return x.encode('ascii')
+    return x.encode('ascii')
 
 def is_ipv4(ip):
     if '.' in ip:
