@@ -212,7 +212,7 @@ Response Parameter
 |billing.phone|string|Billing phone number.|
 |billing.fax|string|Billing fax number.|
 |billing.email|string|Billing email address.|
-|name_servers|array|Name servers|
+|nameservers|array|Name servers|
 
 ```python
 {'domain': 'example.com', 'domain_id': '2336799_DOMAIN_COM-VRSN', 'status': 'clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited', 'create_date': '1995-08-14T04:00:00Z', 'update_date': '2022-08-14T07:01:31Z', 'expire_date': '2023-08-13T04:00:00Z', 'domain_age': 10124, 'whois_server': 'whois.iana.org', 'registrar': {'iana_id': '376', 'name': 'RESERVED-Internet Assigned Numbers Authority', 'url': 'http://res-dom.iana.org'}, 'registrant': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'admin': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'tech': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'billing': {'name': '', 'organization': '', 'street_address': '', 'city': '', 'region': '', 'zip_code': '', 'country': '', 'phone': '', 'fax': '', 'email': ''}, 'nameservers': ['a.iana-servers.net', 'b.iana-servers.net']}
