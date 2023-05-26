@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="ip2location-io",
-	version="1.0.0", 
+	version="1.0.1", 
 	author="IP2Location",
 	author_email="support@ip2location.com",
-	description="IP2Location.io Python SDK to get geolocation info from IPv4 and IPv6 address.",
+	description="This SDK provides users with the ability to perform IP geolocation lookup and domain WHOIS lookup through a web service.",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	py_modules=['ip2locationio'],

@@ -24,8 +24,8 @@ import ip2locationio
 configuration = ip2locationio.Configuration('YOUR_API_KEY')
 ipgeolocation = ip2locationio.IPGeolocation(configuration)
 
-// Lookup ip address geolocation data
-$ip2locationio->lookup('8.8.8.8', 'en'); // The language parameter is only available for Plus and Security plan only.
+# Lookup ip address geolocation data
+print(ipgeolocation.lookup('8.8.8.8', 'en')) # The language parameter is only available for Plus and Security plan only.
 ```
 
 ### Lookup Domain Information
