@@ -148,11 +148,22 @@ Response Parameter
 |geotargeting.metro|string|Metro code based on zip/postal code.|
 |ads_category|string|The domain category code based on IAB Tech Lab Content Taxonomy.|
 |ads_category_name|string|The domain category based on IAB Tech Lab Content Taxonomy. These categories are comprised of Tier-1 and Tier-2 (if available) level categories widely used in services like advertising, Internet security and filtering appliances.|
+|district|string|District or county name.|
 |is_proxy|boolean|Whether is a proxy or not.|
 |proxy.last_seen|integer|Proxy last seen in days.|
 |proxy.proxy_type|string|Type of proxy.|
 |proxy.threat|string|Security threat reported.|
 |proxy.provider|string|Name of VPN provider if available.|
+|proxy.is_vpn|boolean|Anonymizing VPN services.|
+|proxy.is_tor|boolean|Tor Exit Nodes.|
+|proxy.is_data_center|boolean|Hosting Provider, Data Center or Content Delivery Network.|
+|proxy.is_public_proxy|boolean|Public Proxies.|
+|proxy.is_web_proxy|boolean|Web Proxies.|
+|proxy.is_web_crawler|boolean|Search Engine Robots.|
+|proxy.is_residential_proxy|boolean|Residential proxies.|
+|proxy.is_spammer|boolean|Email and forum spammers.|
+|proxy.is_scanner|boolean|Network security scanners.|
+|proxy.is_botnet|boolean|Malware infected devices.|
 
 ```python
 {'ip': '8.8.8.8', 'country_code': 'US', 'country_name': 'United States of America', 'region_name': 'California', 'city_name': 'Mountain View', 'latitude': 37.405992, 'longitude': -122.078515, 'zip_code': '94043', 'time_zone': '-07:00', 'asn': '15169', 'as': 'Google LLC', 'isp': 'Google LLC', 'domain': 'google.com', 'net_speed': 'T1', 'idd_code': '1', 'area_code': '650', 'weather_station_code': 'USCA0746', 'weather_station_name': 'Mountain View', 'mcc': '-', 'mnc': '-', 'mobile_brand': '-', 'elevation': 32, 'usage_type': 'DCH', 'address_type': 'Anycast', 'continent': {'name': 'North America', 'code': 'NA', 'hemisphere': ['north', 'west'], 'translation': {'lang': None, 'value': None}}, 'district': 'Santa Clara County', 'country': {'name': 'United States of America', 'alpha3_code': 'USA', 'numeric_code': 840, 'demonym': 'Americans', 'flag': 'https://cdn.ip2location.io/assets/img/flags/us.png', 'capital': 'Washington, D.C.', 'total_area': 9826675, 'population': 331002651, 'currency': {'code': 'USD', 'name': 'United States Dollar', 'symbol': '$'}, 'language': {'code': 'EN', 'name': 'English'}, 'tld': 'us', 'translation': {'lang': None, 'value': None}}, 'region': {'name': 'California', 'code': 'US-CA', 'translation': {'lang': '', 'value': ''}}, 'city': {'name': 'Mountain View', 'translation': {'lang': None, 'value': None}}, 'time_zone_info': {'olson': 'America/Los_Angeles', 'current_time': '2023-05-03T01:09:59-07:00', 'gmt_offset': -25200, 'is_dst': True, 'sunrise': '06:10', 'sunset': '19:59'}, 'geotargeting': {'metro': '807'}, 'ads_category': 'IAB19-11', 'ads_category_name': 'Data Centers', 'is_proxy': False, 'proxy': {'last_seen': 2, 'proxy_type': 'DCH', 'threat': '-', 'provider': '-'}}
