@@ -107,6 +107,7 @@ Note: This parameter is only available for Plus and Security plan only.
 ```
 
 ## DomainWHOIS Class
+**_Please note that this class is no longer being maintained and has been migrated to a new repository. We recommend that you use the [IP2WHOIS Python SDK](https://github.com/ip2whois/ip2whois-python) going forward._**
 
 ```{py:class} DomainWHOIS(config)
 Initialize the DomainWHOIS class.
