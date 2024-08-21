@@ -11,7 +11,6 @@ setuptools.setup(
 	description="This SDK provides users with the ability to perform IP geolocation lookup and domain WHOIS lookup through a web service.",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	py_modules=['ip2locationio'],
 	url="https://github.com/ip2location/ip2location-io-python",
 	packages=setuptools.find_packages(),
 	tests_require=['pytest>=3.0.6'],
