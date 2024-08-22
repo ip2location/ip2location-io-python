@@ -6,9 +6,20 @@ This module requires API key to function. You may sign up for a free API key at 
 
 ## Installation
 
+### PyPI Installation
+
 Use the following command to install the module:
 ```Bash
 pip install ip2location-io
+```
+
+### Arch Linux
+
+For Arch Linux user, you can install the module using the following command:
+```Bash
+git clone https://aur.archlinux.org/ip2location-io-python.git && cd ip2location-io-python
+export IP2LOCATION_API_KEY=YOUR_API_KEY
+makepkg -si
 ```
 
 ## Sample Codes
@@ -102,3 +113,10 @@ domainwhois = ip2locationio.DomainWHOIS(configuration)
 # Get domain extension (gTLD or ccTLD) from URL or domain name
 print(domainwhois.getdomainextension('example.com'))
 ```
+
+## Testing
+
+For testing, you can use `pytest` with the following steps:
+
+1. Setup your IP2Location.io API Key by export to the environment variable, or set it as a command-line argument when running the `pytest` later. To export the API Key to the environment variable, run `export IP2LOCATION_API_KEY=YOUR_API_KEY`. Be sure to change the 'YOUR_API_KEY' to your corresponding API Key.
+2. Run the `pytest` after you had clone our repository to your local. If you prefer to set your API key as the argument to the `pytest` command, you can run it as `pytest --apikey YOUR_API_KEY`, where you need to substitute the YOUR_API_KEY to your corresponding API Key.
