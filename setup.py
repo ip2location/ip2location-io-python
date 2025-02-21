@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="ip2location-io",
-	version="1.0.6", 
+	version="1.0.7", 
 	author="IP2Location",
 	author_email="support@ip2location.com",
 	description="This SDK provides users with the ability to perform IP geolocation lookup and domain WHOIS lookup through a web service.",
@@ -26,6 +26,7 @@ setuptools.setup(
 		"Programming Language :: Python :: 3.10",
 		"Programming Language :: Python :: 3.11",
 		"Programming Language :: Python :: 3.12",
+		"Programming Language :: Python :: 3.13",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
 		"License :: OSI Approved :: MIT License",
