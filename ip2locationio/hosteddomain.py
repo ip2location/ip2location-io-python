@@ -18,19 +18,19 @@ if not hasattr(socket, 'inet_pton'):
         return out_addr_p.raw
     socket.inet_pton = inet_pton
 
-class IPGeolocation:
+class HostedDomain:
 
     def __init__(self,configuration):
         self.apikey = configuration.getapikey()
         self.moduleversion = configuration.getmoduleversion()
     
-    def lookup(self,ip,language=''):
-        '''This function will look the given IP address up in IP2Location web service.'''
-        parameters = urlencode((("key", self.apikey), ("ip", ip), ("format", "json"), ("lang", language), ("source", "sdk-python-iplio"), ("source_version", self.moduleversion)))
-        response = httprequest("api.ip2location.io", "/?", parameters)
+    def lookup(self,ip,page=''):
+        '''This function will lookup hosted domain information for an IP address.'''
+        parameters = urlencode((("key", self.apikey), ("ip", ip), ("format", "json"), ("page", page), ("source", "sdk-python-iplio"), ("source_version", self.moduleversion)))
+        response = httprequest("domains.ip2whois.com", "/domains?", parameters)
         if (response == None):
             # return False
-            raise IP2LocationIOAPIError('IPGeolocation lookup error.')
+            raise IP2LocationIOAPIError('Hosted Domain lookup error.')
         if ('error' in response):
             raise IP2LocationIOAPIError(response['error']['error_message'])
         return response

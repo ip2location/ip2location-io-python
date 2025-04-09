@@ -9,6 +9,7 @@ This module requires API key to function. You may sign up for a free API key at 
 ### PyPI Installation
 
 Use the following command to install the module:
+
 ```Bash
 pip install ip2location-io
 ```
@@ -16,6 +17,7 @@ pip install ip2location-io
 ### Arch Linux
 
 For Arch Linux user, you can install the module using the following command:
+
 ```Bash
 git clone https://aur.archlinux.org/ip2location-io-python.git && cd ip2location-io-python
 export IP2LOCATION_API_KEY=YOUR_API_KEY
@@ -112,6 +114,22 @@ domainwhois = ip2locationio.DomainWHOIS(configuration)
 
 # Get domain extension (gTLD or ccTLD) from URL or domain name
 print(domainwhois.getdomainextension('example.com'))
+```
+
+### Get Hosted Domain List
+
+You can get the domains hosted within the IP using following codes:
+
+```python
+import ip2locationio
+
+# Configures IP2Location.io API key
+configuration = ip2locationio.Configuration('YOUR_API_KEY')
+hosteddomain = ip2locationio.HostedDomain(configuration)
+
+# Get the list of the hosted domain on the IP.
+result = hosteddomain.lookup('8.8.8.8')
+print(result)
 ```
 
 ## Testing
